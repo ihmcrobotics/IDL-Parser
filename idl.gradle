@@ -61,8 +61,8 @@ configurations {
    compile.extendsFrom antlr4
 }
 
-group = "com.eprosima"
-version = "1.0.0"
+group = "us.ihmc.thirdparty.eprosima"
+version = "1.0.0-ihmc3"
 
 //general properties
 jar {
