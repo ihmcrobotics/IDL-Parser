@@ -17,6 +17,7 @@ package com.eprosima.idl.parser.typecode;
 import com.eprosima.idl.parser.tree.Annotation;
 import com.eprosima.idl.parser.tree.Notebook;
 import com.eprosima.idl.context.Context;
+import us.ihmc.commons.FormattingTools;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -42,12 +43,14 @@ public class Member implements Notebook
     
     public String getJavaName() {
     	if (m_name != null) {
-	    	Character firstChar =Character.toUpperCase(m_name.charAt(0));
-	    	String javaName = firstChar.toString();
-	    	if (m_name.length() > 1) {
-	    		javaName += m_name.substring(1);
-	    	}
-	    	return javaName;
+
+    	   return FormattingTools.underscoredToCamelCase(m_name, true);
+//	    	Character firstChar =Character.toUpperCase(m_name.charAt(0));
+//	    	String javaName = firstChar.toString();
+//	    	if (m_name.length() > 1) {
+//	    		javaName += m_name.substring(1);
+//	    	}
+//	    	return javaName;
     	}
     	return null;
     }
