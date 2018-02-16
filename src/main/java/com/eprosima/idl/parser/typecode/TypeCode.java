@@ -80,7 +80,27 @@ public abstract class TypeCode
     }
 
     public abstract String getJavaTypename();
-    
+
+    public boolean getIsObjectSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Object");
+    }
+
+    public boolean getIsStringBuilderSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.StringBuilderHolder");
+    }
+
+    public boolean getIsBooleanSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Boolean");
+    }
+
+    public boolean getIsIdlSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence");
+    }
+
     protected StringTemplate getJavaTypenameFromStringTemplate()
     {
         StringTemplate st = javatypesgr.getInstanceOf("type_" + Integer.toHexString(m_kind));

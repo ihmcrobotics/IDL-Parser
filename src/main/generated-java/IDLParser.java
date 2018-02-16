@@ -1,4 +1,4 @@
-// Generated from F:\ReposDDS\eprosima-idl-parser\src\main\antlr4\omg\IDL.g4 by ANTLR 4.2.2
+// Generated from F:\GitRepos\idl-parser\src\main\antlr4\omg\IDL.g4 by ANTLR 4.2.2
 package com.eprosima.idl.parser.grammar;
 
     //package com.eprosima.idl.parser.grammar;

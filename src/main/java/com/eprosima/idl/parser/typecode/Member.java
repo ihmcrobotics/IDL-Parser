@@ -44,6 +44,7 @@ public class Member implements Notebook
     public String getJavaName() {
     	if (m_name != null) {
 
+    	    // @dcalvert: Fix Java method naming from getSome_type() to getSomeType()
     	   return FormattingTools.underscoredToCamelCase(m_name, true);
 //	    	Character firstChar =Character.toUpperCase(m_name.charAt(0));
 //	    	String javaName = firstChar.toString();
