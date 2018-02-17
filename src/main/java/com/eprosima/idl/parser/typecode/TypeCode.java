@@ -96,6 +96,41 @@ public abstract class TypeCode
         return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Boolean");
     }
 
+    public boolean getIsByteSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Byte");
+    }
+
+    public boolean getIsCharSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Char");
+    }
+
+    public boolean getIsShortSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Short");
+    }
+
+    public boolean getIsIntegerSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Integer");
+    }
+
+    public boolean getIsLongSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Long");
+    }
+
+    public boolean getIsFloatSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Float");
+    }
+
+    public boolean getIsDoubleSequence()
+    {
+        return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence.Double");
+    }
+
     public boolean getIsIdlSequence()
     {
         return isIsType_e() && getJavaTypename().startsWith("us.ihmc.idl.IDLSequence");
